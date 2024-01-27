@@ -1,0 +1,23 @@
+:root {
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  --perano: #ABB3F4;
+  --chetwode-blue: #868FDB;
+  --oyster-pink: #EACBCB;
+  --quicksand: #BF8F8F;
+  --pot-pourri: #F7E6E6;
+  --roof-terracotta: #B01F23;
+  --vis-vis: #FFF0A3;
+}
+
+@media (hover:hover) {
+
+  .intro-page__link:hover {
+    background: var(--chetwode-blue);
+  }
+
+  .category__button:hover {
+    background: var(--quicksand);
+  }
+
+}

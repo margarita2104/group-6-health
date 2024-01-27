@@ -68,10 +68,12 @@ textarea, select {
   --black-color: #000000;
   --white-color: #FFFFFF;
   --perano: #ABB3F4;
+  --chetwode-blue: #868FDB;
   --oyster-pink: #EACBCB;
+  --quicksand: #BF8F8F;
+  --pot-pourri: #F7E6E6;
   --roof-terracotta: #B01F23;
   --vis-vis: #FFF0A3;
-
 }
 
 /* global  */
@@ -125,4 +127,104 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
+  transition: background 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.intro-page__link:focus-visible {
+  outline: 2px solid var(--chetwode-blue);
+  outline-offset: 3px;
+  background: var(--chetwode-blue);
+}
+
+.intro-page__link:active {
+  outline: 2px solid var(--chetwode-blue);
+  outline-offset: 3px;
+  background: var(--chetwode-blue);
+}
+
+/* main page */
+
+.swal2-popup {
+  border-radius: 50px;
+  background: var(--perano);
+  color: var(--vis-vis);
+}
+
+.main-page__heading {
+  margin-top: 84px;
+  margin-bottom: 80px;
+  color: var(--perano);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.category__list {
+  justify-content: center;
+  align-items: center;
+}
+
+.category__box {
+  padding: 60px 80px;
+  border-radius: 50px;
+  background: var(--perano);
+}
+
+.category__item {
+  margin-bottom: 100px;
+}
+
+.category__item:not(:last-child) {
+  margin-right: auto;
+}
+
+
+
+.category__title {
+  margin-bottom: 35px;
+  color: var(--vis-vis);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.category__buttons {
+  justify-content: space-around;
+}
+
+.category__button {
+  padding: 6px;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  background: var(--oyster-pink);
+  outline: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.category__button:focus-visible {
+  background: var(--quicksand);
+}
+
+.category__button:active {
+  background: var(--pot-pourri);
+}
+
+.button__text {
+  color: var(--oyster-pink);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.category__button-sleep {
+  background: var(--white-color);
+  width: 85px;
+  height: 80px;
+}
+
+.category__button-steps {
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  background: var(--white-color);
+
 }
