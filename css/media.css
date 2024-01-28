@@ -47,6 +47,18 @@
 
 }
 
+@media (max-width: 1049px) {
+
+  .results-content__container {
+    padding: 65px 134px;
+  }
+
+  .results__list {
+    justify-content: space-evenly;
+  }
+
+}
+
 @media (max-width: 991px) {
 
   .main__img {

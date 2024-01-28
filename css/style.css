@@ -324,3 +324,45 @@ section {
   font-size: 28px;
   font-weight: 400;
 }
+
+
+
+@media (max-width: 1399px) {
+
+  .category__list {
+    justify-content: flex-start;
+  }
+
+  .results__list {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 1199px) {
+
+  .category__list {
+    justify-content: flex-start;
+  }
+
+} 
+
+@media (max-width: 1049px) {
+
+  .results-content__container {
+    padding: 65px 134px;
+  }
+
+  .results__list {
+    justify-content: space-evenly;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .main__img {
+    margin-bottom: 100px;
+  }
+
+}
