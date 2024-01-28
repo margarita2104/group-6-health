@@ -5,149 +5,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitness tracker</title>
-
   <link href="../css/normilize.css" rel="stylesheet">
   <link href="../css//bootstrap-grid.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
   <link href="../css/media.css" rel="stylesheet">
-
+  <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <div class="row align-items-center justify-content-center">
-        <time class="intro-page__time" id="currentDate">
+        <time class="intro-page__time" id="currentDate1">
         </time>
         <h1 class="main-page__heading">
         </h1>
-        <div class="category__container">
-          <ul class="category__list list-reset flex">
-            <li class="category__item">
-              <div class="category__box">
-                <h2 class="category__title">How are you feeling today?</h2>
-                <ul class="category__buttons list-reset flex">
-                  <li class="buttons__item">
-                    <button class="category__button btn-reset">
-                      <img src="../img/mood-happy.png" alt="Happy mood">
-                    </button>
-                    <button class="category__button btn-reset">
-                      <img src="../img/mood-ok.png" alt="Ok mood">
-                    </button>
-                    <button class="category__button btn-reset">
-                      <img src="../img/mood-sad.png" alt="Sad mood">
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <img src="../img/intropage-img.png" alt="Woman meditates">
-
-            <li class="category__item">
-              <div class="category__box">
-                <h2 class="category__title">Have you had enough water?</h2>
-                <ul class="category__buttons list-reset flex">
-                  <li class="buttons__item">
-                    <button class="category__button btn-reset">
-                      <img src="../img/water-drop.png" alt="Water drop">
-                    </button>
-                    <button class="category__button btn-reset">
-                      <img src="../img/water-drop.png" alt="Water drop">
-                    </button>
-                    <button class="category__button btn-reset">
-                      <img src="../img/water-drop.png" alt="Water drop">
-                    </button>
-                    <button class="category__button btn-reset">
-                      <img src="../img/water-drop.png" alt="Water drop">
-                    </button>
-                    <button class="category__button btn-reset">
-                      <img src="../img/water-drop.png" alt="Water drop">
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="category__item">
-              <div class="category__box">
-                <h2 class="category__title">How did you sleep today?</h2>
-                <ul class="category__buttons list-reset flex">
-                  <li class="buttons__item">
-                    <button class="category__button category__button-sleep btn-reset">
-                      <p class="button__text">
-                        6
-                      </p>
-                    </button>
-                    <button class="category__button category__button-sleep btn-reset">
-                      <p class="button__text">
-                        7
-                      </p>
-                    </button>
-                    <button class="category__button category__button-sleep btn-reset">
-                      <p class="button__text">
-                        8
-                      </p>
-                    </button>
-                    <button class="category__button category__button-sleep btn-reset">
-                      <p class="button__text">
-                        9
-                      </p>
-                    </button>
-                    <button class="category__button category__button-sleep btn-reset">
-                      <p class="button__text">
-                        10
-                      </p>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="category__item">
-              <div class="category__box">
-                <h2 class="category__title">How many steps have you take today?</h2>
-                <ul class="category__buttons list-reset flex">
-                  <li class="buttons__item">
-                    <button class="category__button category__button-steps btn-reset">
-                      <p class="button__text">
-                        500
-                      </p>
-                    </button>
-                    <button class="category__button category__button-steps btn-reset">
-                      <p class="button__text">
-                        1000
-                      </p>
-                    </button>
-                    <button class="category__button category__button-steps btn-reset">
-                      <p class="button__text">
-                        5000
-                      </p>
-                    </button>
-                    <button class="category__button category__button-steps btn-reset">
-                      <p class="button__text">
-                        8000
-                      </p>
-                    </button>
-                    <button class="category__button category__button-steps btn-reset">
-                      <p class="button__text">
-                        10000
-                      </p>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
       </div>
     </div>
   </header>
+  <main class="main">
+    <section class="dashboard">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="category__container">
+            <ul class="category__list list-reset flex">
+              <li class="category__item">
+                <div class="category__box">
+                  <h2 class="category__title">How are you feeling today?</h2>
+                  <ul class="category__buttons list-reset flex">
+                    <li class="buttons__item">
+                      <button id="mood-btn1" class="mood__btn category__button btn-reset">
+                        <img src="../img/mood-happy.png" alt="Happy mood">
+                      </button>
+                      <button id="mood-btn2" class="mood__btn category__button btn-reset">
+                        <img src="../img/mood-ok.png" alt="Ok mood">
+                      </button>
+                      <button id="mood-btn3" class="mood__btn category__button btn-reset">
+                        <img src="../img/mood-sad.png" alt="Sad mood">
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <img class="main__img" src="../img/intropage-img.png" alt="Woman meditates">
+              <li class="category__item">
+                <div class="category__box">
+                  <h2 class="category__title">Have you had enough water?</h2>
+                  <ul class="category__buttons list-reset flex">
+                    <li class="buttons__item">
+                      <button onclick="drink(250, 1)" class="drop category__button btn-reset">
+                        <img src="../img/water-drop.png" alt="Water drop">
+                      </button>
+                      <button onclick="drink(250, 2)" class="drop category__button btn-reset">
+                        <img src="../img/water-drop.png" alt="Water drop">
+                      </button>
+                      <button onclick="drink(250, 3)" class="drop category__button btn-reset">
+                        <img src="../img/water-drop.png" alt="Water drop">
+                      </button>
+                      <button onclick="drink(250, 4)" class="drop category__button btn-reset">
+                        <img src="../img/water-drop.png" alt="Water drop">
+                      </button>
+                      <button onclick="drink(250, 5)" class="drop category__button btn-reset">
+                        <img src="../img/water-drop.png" alt="Water drop">
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__box">
+                  <h2 class="category__title">How did you sleep today?</h2>
+                  <ul class="category__buttons list-reset flex">
+                    <li class="buttons__item">
+                      <button id="sleep-btn1" class="category__button category__button-sleep btn-reset">
+                        <p class="button__text">
+                          6
+                        </p>
+                      </button>
+                      <button id="sleep-btn2" class="category__button category__button-sleep btn-reset">
+                        <p class="button__text">
+                          7
+                        </p>
+                      </button>
+                      <button id="sleep-btn3" class="category__button category__button-sleep btn-reset">
+                        <p class="button__text">
+                          8
+                        </p>
+                      </button>
+                      <button id="sleep-btn4" class="category__button category__button-sleep btn-reset">
+                        <p class="button__text">
+                          9
+                        </p>
+                      </button>
+                      <button id="sleep-btn5" class="category__button category__button-sleep btn-reset">
+                        <p class="button__text">
+                          10
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__box">
+                  <h2 class="category__title">How many steps have you taken today?</h2>
+                  <ul class="category__buttons list-reset flex">
+                    <li class="buttons__item">
+                      <button id="steps-btn1" class="category__button category__button-steps btn-reset">
+                        <p class="button__text">
+                          500
+                        </p>
+                      </button>
+                      <button id="steps-btn2" class="category__button category__button-steps btn-reset">
+                        <p class="button__text">
+                          1000
+                        </p>
+                      </button>
+                      <button id="steps-btn3" class="category__button category__button-steps btn-reset">
+                        <p class="button__text">
+                          5000
+                        </p>
+                      </button>
+                      <button id="steps-btn4" class="category__button category__button-steps btn-reset">
+                        <p class="button__text">
+                          8000
+                        </p>
+                      </button>
+                      <button id="steps-btn5" class="category__button category__button-steps btn-reset">
+                        <p class="button__text">
+                          10000
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="results">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <button class="btn-rest results__btn">
+            Show my results
+          </button>
+          <div class="results__container">
+            <div class="results-content__container flex">
+              <time class="intro-page__time results__time" id="currentDate2">
+              </time>
+              <h2 class="results__title">
+              </h2>
+              <ul class="results__list list-reset flex">
+                <li class="results__item flex">
+                  <img class="results__img" src="../img/results-sleep.png" alt="Sleep icon">
+                  <p id="mood-result1" class="results__descr"></p>
+                </li>
+                <li class="results__item flex">
+                  <img class="results__img" src="../img/results-happy.png" alt="Mood icon">
+                  <p id="mood-result2" class="results__descr"></p>
+                </li>
+                <li class="results__item flex">
+                  <img class="results__img" src="../img/results-water.svg" alt="Water icon">
+                  <p id="mood-result3" class="results__descr"></p>
+                </li>
+                <li class="results__item flex">
+                  <img class="results__img" src="../img/results-steps.png" alt="Steps icon">
+                  <p id="mood-result4" class="results__descr"></p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../index.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../index.js"></script>
 
 </html>
