@@ -98,24 +98,28 @@ function updateResult(mood, clickedButton) {
 
 // water
 
-let totalml = 0;
-let activeButton = 1;
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".drop.category__button");
 
-function drink(drops, buttonNumber) {
-  if (buttonNumber === activeButton) {
-    totalml += drops;
-    document.getElementById("mood-result3").innerText = totalml + " ml";
-    activeButton++;
-    updateButtonState();
-  }
-}
-
-// to make sure you can only click on the next button and cannot go back
-function updateButtonState() {
-  const buttons = document.querySelectorAll(".drop button");
-  buttons.forEach((button, index) => {
-    button.disabled = index + 1 !== activeButton;
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const amount = parseInt(button.getAttribute("data-amount"));
+      displayAmount(amount, button);
+    });
   });
+});
+
+function displayAmount(amount, clickedButton) {
+  // Remove "active-mood" class from all buttons
+  const buttons = document.querySelectorAll(".drop.category__button");
+  buttons.forEach((button) => {
+    button.classList.remove("active-mood");
+  });
+
+  // Add "active-mood" class to the clicked button
+  clickedButton.classList.add("active-mood");
+
+  document.getElementById("mood-result3").innerText = amount + " ml";
 }
 
 // sleep
@@ -158,3 +162,47 @@ const stepsBtn4 = document.getElementById("steps-btn4");
 stepsBtn4.addEventListener("click", () => saveSteps(8000));
 const stepsBtn5 = document.getElementById("steps-btn5");
 stepsBtn5.addEventListener("click", () => saveSteps(10000));
+
+//  results section works but need to click on all
+// document.addEventListener('DOMContentLoaded', function () {
+//   var resultsBtn = document.querySelector('.results__btn');
+//   var resultsSection = document.getElementById('resultsSection');
+
+//   if (resultsBtn && resultsSection) {
+//       resultsBtn.addEventListener('click', function () {
+//           // Toggle the visibility of the results section by adding/removing a class
+//           resultsSection.classList.toggle('visible');
+//       });
+//   } else {
+//       console.log('Button or results section not found.');
+//   }
+// });
+//does not work ---
+document.addEventListener("DOMContentLoaded", function () {
+  var resultsBtn = document.querySelector(".results__btn");
+  var resultsSection = document.getElementById("resultsSection");
+
+  if (resultsBtn && resultsSection) {
+    resultsBtn.addEventListener("click", function () {
+      // Check if all category lists have a selection
+      var moodResult1 = document.getElementById("mood-result1");
+      var moodResult2 = document.getElementById("mood-result2");
+      var moodResult3 = document.getElementById("mood-result3");
+      var moodResult4 = document.getElementById("mood-result4");
+
+      var allMoodResultsSelected =
+        moodResult1 && moodResult2 && moodResult3 && moodResult4;
+
+      if (allMoodResultsSelected) {
+        // Toggle the visibility of the results section by adding/removing a class
+        resultsSection.classList.toggle("visible");
+      } else {
+        alert(
+          "Please select a mood result from each category before showing results."
+        );
+      }
+    });
+  } else {
+    console.log("Button or results section not found.");
+  }
+});

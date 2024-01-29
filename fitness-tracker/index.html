@@ -55,19 +55,19 @@
                   <h2 class="category__title">Have you had enough water?</h2>
                   <ul class="category__buttons list-reset flex">
                     <li class="buttons__item">
-                      <button onclick="drink(250, 1)" class="drop category__button btn-reset">
+                      <button data-amount="250" class="drop category__button btn-reset">
                         <img src="../img/water-drop.png" alt="Water drop">
                       </button>
-                      <button onclick="drink(250, 2)" class="drop category__button btn-reset">
+                      <button data-amount="500" class="drop category__button btn-reset">
                         <img src="../img/water-drop.png" alt="Water drop">
                       </button>
-                      <button onclick="drink(250, 3)" class="drop category__button btn-reset">
+                      <button data-amount="750" class="drop category__button btn-reset">
                         <img src="../img/water-drop.png" alt="Water drop">
                       </button>
-                      <button onclick="drink(250, 4)" class="drop category__button btn-reset">
+                      <button data-amount="1000" class="drop category__button btn-reset">
                         <img src="../img/water-drop.png" alt="Water drop">
                       </button>
-                      <button onclick="drink(250, 5)" class="drop category__button btn-reset">
+                      <button odata-amount="1250" class="drop category__button btn-reset">
                         <img src="../img/water-drop.png" alt="Water drop">
                       </button>
                     </li>
@@ -153,7 +153,7 @@
           <button class="btn-rest results__btn">
             Show my results
           </button>
-          <div class="results__container">
+          <div id="resultsSection" class="results__container resultsSection">
             <div class="results-content__container flex">
               <time class="intro-page__time results__time" id="currentDate2">
               </time>

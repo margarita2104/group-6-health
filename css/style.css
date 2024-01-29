@@ -203,6 +203,7 @@ section {
 
 .category__button {
   padding: 6px;
+  border: 2px solid white;
   margin-bottom: 6px;
   border-radius: 20px;
   background: var(--oyster-pink);
@@ -220,6 +221,7 @@ section {
 
 .category__button:active, .active-mood {
   background: var(--pot-pourri);
+  border: 5px solid white;
 }
 
 .button__text {
@@ -246,6 +248,15 @@ section {
 
 /* results */
 
+.resultsSection {
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}
+
+
 .results__btn {
   padding: 25px 71px 24px 71px;
   margin-bottom: 114px;
@@ -258,6 +269,9 @@ section {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 5%;
   transition: background 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
@@ -345,7 +359,7 @@ section {
     justify-content: flex-start;
   }
 
-} 
+}
 
 @media (max-width: 1049px) {
 
