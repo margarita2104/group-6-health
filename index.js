@@ -221,36 +221,6 @@ stepsBtn5.addEventListener("click", () => {
 // });
 //does not work ---
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   var resultsBtn = document.querySelector(".results__btn");
-//   var resultsSection = document.getElementById("resultsSection");
-
-//   if (resultsBtn && resultsSection) {
-//     resultsBtn.addEventListener("click", function () {
-//       // Check if all category lists have a selection
-//       var moodResult1 = document.getElementById("mood-result1").value;
-//       var moodResult2 = document.getElementById("mood-result2").value;
-//       var moodResult3 = document.getElementById("mood-result3").value;
-//       var moodResult4 = document.getElementById("mood-result4").value;
-
-//       var allMoodResultsSelected =
-//         moodResult1 && moodResult2 && moodResult3 && moodResult4;
-
-//       if (allMoodResultsSelected) {
-//         // Toggle the visibility of the results section by adding/removing a class
-//         resultsSection.classList.add("visible");
-//       } else {
-//         alert(
-//           "Please select a mood result from each category before showing results."
-//         );
-//       }
-//     });
-//   } else {
-//     console.log("Button or results section not found.");
-//   }
-// });
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var resultsBtn = document.querySelector(".results__btn");
   var resultsSection = document.getElementById("resultsSection");
@@ -258,10 +228,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (resultsBtn && resultsSection) {
     resultsBtn.addEventListener("click", function () {
       // Check if all category lists have a selection
-      var moodResult1 = document.getElementById("mood-result1").value;
-      var moodResult2 = document.getElementById("mood-result2").value;
-      var moodResult3 = document.getElementById("mood-result3").value;
-      var moodResult4 = document.getElementById("mood-result4").value;
+      var moodResult1 = document.getElementById("mood-result1");
+      var moodResult2 = document.getElementById("mood-result2");
+      var moodResult3 = document.getElementById("mood-result3");
+      var moodResult4 = document.getElementById("mood-result4");
 
       var allMoodResultsSelected =
         moodResult1 && moodResult2 && moodResult3 && moodResult4;
