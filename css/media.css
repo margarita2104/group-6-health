@@ -28,7 +28,7 @@
 
 }
 
-@media (min-width: 1399px) {
+@media (max-width: 1399px) {
 
   .category__list {
     justify-content: flex-start;
@@ -40,7 +40,7 @@
 
 }
 
-@media (min-width: 1199px) {
+@media (max-width: 1199px) {
 
   .category__list {
     justify-content: flex-start;
@@ -53,7 +53,7 @@
 
 }
 
-@media (min-width: 1049px) {
+@media (max-width: 1049px) {
 
   .results-content__container {
     padding: 65px 134px;
@@ -65,7 +65,7 @@
 
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
 
   .main__img {
     margin-bottom: 100px;
@@ -73,15 +73,19 @@
 
 }
 
-@media (min-width: 899px) {
+@media (max-width: 899px) {
 
   .category__box {
     padding: 60px 50px;
   }
 
+  .category__buttons {
+    justify-content: center;
 }
 
-@media (min-width: 786px) {
+}
+
+@media (max-width: 786px) {
 
   .results-content__container {
     padding: 65px 28px;
@@ -93,7 +97,7 @@
 
 }
 
-@media (min-width: 589px) {
+@media (max-width: 589px) {
   .results-content__container {
     padding: 65px 0px;
     background-color: var(--kournikova);
@@ -103,9 +107,27 @@
     justify-content: space-evenly;
   }
 
+  .category__item {
+    width: 100%;
+  }
+
+  .category__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .category__box {
+    padding: 60px 30px;
+  }
+
+  .category__button {
+    padding: 2px;
+  }
+
+
+
 }
 
-@media (min-width: 441px) {
+@media (max-width: 441px) {
 
   .results-content__container {
     padding: 65px 0px;
@@ -114,7 +136,7 @@
 
 }
 
-@media (min-width: 330px) {
+@media (max-width: 330px) {
 
   .results-content__container {
     padding: 65px 0px;

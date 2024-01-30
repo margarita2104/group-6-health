@@ -201,6 +201,10 @@ section {
   justify-content: space-around;
 }
 
+.buttons__item:not(:last-child) {
+  margin-right: 5px;
+}
+
 .button__text {
   color: var(--chetwode-blue);
   font-size: 50px;
