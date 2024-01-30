@@ -228,25 +228,23 @@ section {
   border: 2px solid white;
   margin-bottom: 6px;
   border-radius: 20px;
-  background: var(--oyster-pink);
+  background-color: var(--oyster-pink);
   outline: none;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .category__button:focus-visible {
   background: var(--quicksand);
 }
 
-.category__button:active {
-  background: var(--pot-pourri);
+.category__button:active:not(:focus-visible) {
+  background-color: var(--pot-pourri);
 }
 
 .category__button:active, .active-mood {
   background: var(--pot-pourri);
   box-shadow: 0 0 0 2px var(--white-color)
 }
-
-
 
 /* results */
 

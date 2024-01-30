@@ -28,7 +28,7 @@
 
 }
 
-@media (max-width: 1399px) {
+@media (min-width: 1399px) {
 
   .category__list {
     justify-content: flex-start;
@@ -40,10 +40,15 @@
 
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1199px) {
 
   .category__list {
     justify-content: flex-start;
+  }
+
+  .results__item {
+    width: 220px;
+    height: 220px;
   }
 
 }
@@ -60,7 +65,7 @@
 
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
 
   .main__img {
     margin-bottom: 100px;
