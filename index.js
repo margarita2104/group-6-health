@@ -130,6 +130,15 @@ for (let i = 1; i <= 5; i++) {
   let res = document.getElementById(`mood-result1`);
 
   sleepBtn.addEventListener("click", function () {
+    // Remove active class from all buttons
+    for (let j = 1; j <= 5; j++) {
+      let otherBtn = document.getElementById(`sleep-btn${j}`);
+      otherBtn.classList.remove("active-mood");
+    }
+
+    // Add active class to the clicked button
+    sleepBtn.classList.add("active-mood");
+
     console.log(`${hrs}:00 hours`);
     res.textContent = `${hrs}:00 hours`;
   });
@@ -152,16 +161,49 @@ function saveSteps(value) {
   }
 }
 
+function activateStepsButton(buttonId) {
+  // Remove active class from all buttons
+  for (let i = 1; i <= 5; i++) {
+    let otherBtn = document.getElementById(`steps-btn${i}`);
+    otherBtn.classList.remove("active-mood");
+  }
+
+  // Add active class to the clicked button
+  let clickedBtn = document.getElementById(buttonId);
+  clickedBtn.classList.add("active-mood");
+}
+
 const stepsBtn1 = document.getElementById("steps-btn1");
-stepsBtn1.addEventListener("click", () => saveSteps(500));
+stepsBtn1.addEventListener("click", () => {
+  saveSteps(500);
+  activateStepsButton("steps-btn1");
+});
+
 const stepsBtn2 = document.getElementById("steps-btn2");
-stepsBtn2.addEventListener("click", () => saveSteps(1000));
+stepsBtn2.addEventListener("click", () => {
+  saveSteps(1000);
+  activateStepsButton("steps-btn2");
+});
+
 const stepsBtn3 = document.getElementById("steps-btn3");
-stepsBtn3.addEventListener("click", () => saveSteps(5000));
+stepsBtn3.addEventListener("click", () => {
+  saveSteps(5000);
+  activateStepsButton("steps-btn3");
+});
+
 const stepsBtn4 = document.getElementById("steps-btn4");
-stepsBtn4.addEventListener("click", () => saveSteps(8000));
+stepsBtn4.addEventListener("click", () => {
+  saveSteps(8000);
+  activateStepsButton("steps-btn4");
+});
+
 const stepsBtn5 = document.getElementById("steps-btn5");
-stepsBtn5.addEventListener("click", () => saveSteps(10000));
+stepsBtn5.addEventListener("click", () => {
+  saveSteps(10000);
+  activateStepsButton("steps-btn5");
+});
+
+// results
 
 //  results section works but need to click on all
 // document.addEventListener('DOMContentLoaded', function () {
@@ -178,6 +220,7 @@ stepsBtn5.addEventListener("click", () => saveSteps(10000));
 //   }
 // });
 //does not work ---
+
 document.addEventListener("DOMContentLoaded", function () {
   var resultsBtn = document.querySelector(".results__btn");
   var resultsSection = document.getElementById("resultsSection");
