@@ -257,7 +257,7 @@ section {
 }
 
 .visible {
-  display: block !important;
+  display: block;
 }
 
 
