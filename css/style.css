@@ -168,7 +168,7 @@ section {
 
 .tippy-box[data-theme~='group6'] {
   background-color: var(--vis-vis);
-  color: var(--roof-terracotta);
+  color: var(--chetwode-blue);
 }
 
 .tippy-box[data-theme~='group6'][data-placement^='bottom'] > .tippy-arrow::before {

@@ -23,7 +23,7 @@ updateCurrentDate("currentDate");
 updateCurrentDate("currentDate1");
 updateCurrentDate("currentDate2");
 
-// greeting
+// greeting & sweetalert
 
 document.addEventListener("DOMContentLoaded", function () {
   var userName = localStorage.getItem("userName");
@@ -205,22 +205,6 @@ stepsBtn5.addEventListener("click", () => {
 
 // results
 
-//  results section works but need to click on all
-// document.addEventListener('DOMContentLoaded', function () {
-//   var resultsBtn = document.querySelector('.results__btn');
-//   var resultsSection = document.getElementById('resultsSection');
-
-//   if (resultsBtn && resultsSection) {
-//       resultsBtn.addEventListener('click', function () {
-//           // Toggle the visibility of the results section by adding/removing a class
-//           resultsSection.classList.toggle('visible');
-//       });
-//   } else {
-//       console.log('Button or results section not found.');
-//   }
-// });
-//does not work ---
-
 document.addEventListener("DOMContentLoaded", function () {
   var resultsBtn = document.querySelector(".results__btn");
   var resultsSection = document.getElementById("resultsSection");
@@ -252,6 +236,8 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Button or results section not found.");
   }
 });
+
+// tooltip
 
 tippy("#mood-btn1", {
   content: "Happy!",
