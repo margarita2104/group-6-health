@@ -234,7 +234,10 @@ document.addEventListener("DOMContentLoaded", function () {
       var moodResult4 = document.getElementById("mood-result4");
 
       var allMoodResultsSelected =
-        moodResult1 && moodResult2 && moodResult3 && moodResult4;
+        moodResult1 !== "" &&
+        moodResult2 !== "" &&
+        moodResult3 !== "" &&
+        moodResult4 !== "";
 
       if (allMoodResultsSelected) {
         // Toggle the visibility of the results section by adding/removing a class
@@ -248,4 +251,52 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.log("Button or results section not found.");
   }
+});
+
+tippy("#mood-btn1", {
+  content: "Happy!",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#mood-btn2", {
+  content: "Ok",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#mood-btn3", {
+  content: "Meh :(",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#water250", {
+  content: "250 ml",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#water500", {
+  content: "500 ml",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#water750", {
+  content: "750 ml",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#water1000", {
+  content: "1000 ml",
+  placement: 'bottom',
+  theme: 'group6',
+});
+
+tippy("#water1250", {
+  content: "1250 ml",
+  placement: 'bottom',
+  theme: 'group6',
 });

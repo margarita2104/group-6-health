@@ -166,6 +166,15 @@ section {
   border: none;
 }
 
+.tippy-box[data-theme~='group6'] {
+  background-color: var(--vis-vis);
+  color: var(--roof-terracotta);
+}
+
+.tippy-box[data-theme~='group6'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--vis-vis);
+}
+
 .main-page__heading {
   margin-top: 84px;
   margin-bottom: 95px;
