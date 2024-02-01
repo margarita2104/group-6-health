@@ -212,10 +212,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (resultsBtn && resultsSection) {
     resultsBtn.addEventListener("click", function () {
       // Check if all category lists have a selection
-      var moodResult1 = document.getElementById("mood-result1");
-      var moodResult2 = document.getElementById("mood-result2");
-      var moodResult3 = document.getElementById("mood-result3");
-      var moodResult4 = document.getElementById("mood-result4");
+      var moodResult1 = document.getElementById("mood-result1").textContent;
+      var moodResult2 = document.getElementById("mood-result2").textContent;
+      var moodResult3 = document.getElementById("mood-result3").textContent;
+      var moodResult4 = document.getElementById("mood-result4").textContent;
 
       var allMoodResultsSelected =
         moodResult1 !== "" &&
