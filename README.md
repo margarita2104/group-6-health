@@ -49,8 +49,6 @@ The Fitness Tracker is designed to assist users in tracking various aspects of t
 3. **Sleep Tracking**: Track your sleep patterns to ensure a healthy sleep routine.
 4. **Step Counter**: Utilize the step counter to monitor your daily physical activity.
 
-```javascript
-
 import Swal from 'sweetalert2';
 import tippy from 'tippy.js';
 
@@ -64,5 +62,3 @@ We welcome contributions to enhance the Fitness Tracker project. If you have sug
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to customize this README further with additional details or specific instructions related to your fitness tracker application.
