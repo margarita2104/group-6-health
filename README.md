@@ -50,7 +50,7 @@ The Fitness Tracker is designed to assist users in tracking various aspects of t
 4. **Step Counter**: Utilize the step counter to monitor your daily physical activity.
 
 ```javascript
-// Include the necessary libraries
+
 import Swal from 'sweetalert2';
 import tippy from 'tippy.js';
 
