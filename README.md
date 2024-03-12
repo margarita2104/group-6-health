@@ -8,6 +8,7 @@ The Fitness Tracker project is a comprehensive tool designed to help users monit
 - Ana Jesus
 - Zahra Ali
 - Joanna Czerwenak
+- Margarita Ferreira
 
 ## Technologies Used
 
